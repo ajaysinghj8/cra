@@ -1,0 +1,54 @@
+{
+  "name": "@ajaysingh/cra",
+  "version": "0.0.1",
+  "description": "Typescript React Project builder",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "author": "Ajay Singh<ajaysinghj8@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.2.3"
+  },
+  "bugs": {
+    "url": "https://github.com/ajaysinghj8/cra/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajaysinghj8/cra.git"
+  },
+  "keywords": [
+    "CRA",
+    "REACT",
+    "PROJECT",
+    "TYPESCRIPT",
+    "CUSTOM"
+  ],
+  "bin": {
+    "osham": "./bin/cra"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/node": "^14.14.32",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "debug": "^4.3.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "reflect-metadata": "^0.1.13",
+    "standard-version": "^9.1.1",
+    "typedoc": "^0.20.30"
+  },
+  "scripts": {
+    "lint": "eslint ./src --cache --ext js,jsx,ts,tsx",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
